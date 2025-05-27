@@ -28,10 +28,11 @@ class _MyAppState extends State<MyApp> {
       //LINK CONTAINS APK OF FLUTTER HELLO WORLD FROM FLUTTER SDK EXAMPLES
       OtaUpdate()
           .execute(
-        'https://internal1.4q.sk/flutter_hello_world.apk',
-        destinationFilename: 'flutter_hello_world.apk',
+        'https://raw.githubusercontent.com/abbos2101/expriment_install_app/refs/heads/main/app_versions/app-release.apk',
+        // destinationFilename: 'flutter_hello_world.apk',
         //FOR NOW ANDROID ONLY - ABILITY TO VALIDATE CHECKSUM OF FILE:
-        sha256checksum: '28cff8632531859634c4142ec704e86c5345244bddd6433b6160edaabc9b646a',
+        sha256checksum:
+        '2124562199071c974d1919373c712fb707c9dc8e1245bbc7de122c6ad33637dc',
       )
           .listen(
             (OtaEvent event) {
@@ -51,9 +52,6 @@ class _MyAppState extends State<MyApp> {
     }
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
         body: Center(
           child: Text('OTA status: ${currentEvent?.status} : ${currentEvent?.value} \n'),
         ),
