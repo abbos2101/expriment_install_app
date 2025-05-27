@@ -45,8 +45,8 @@ class _UpdatePageState extends State<UpdatePage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(backgroundColor: Colors.blue),
-        backgroundColor: Colors.white,
+        appBar: AppBar(backgroundColor: Colors.redAccent),
+        backgroundColor: Colors.yellow,
         floatingActionButton: FloatingActionButton(onPressed: tryOtaUpdate),
         body: Center(
           child: Column(
@@ -54,7 +54,7 @@ class _UpdatePageState extends State<UpdatePage> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                'OTA status: ${currentEvent?.status} : ${currentEvent?.value} \n',
+                'status: ${currentEvent?.status} : ${currentEvent?.value} \n',
               ),
               TextField(controller: sha256controller),
             ],
