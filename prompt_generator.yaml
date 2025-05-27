@@ -1,0 +1,13 @@
+needYaml: true
+savedFile: "app-code.txt"
+skipFiles: [
+  '.freezed.dart',
+  '.g.dart',
+  '.res.dart',
+  '.config.dart',
+  '/.',
+]
+#filePatterns: ['%_page.dart'] # if you need
+includePaths: [
+    'lib/'
+]
