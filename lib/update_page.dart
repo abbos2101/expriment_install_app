@@ -45,6 +45,7 @@ class _UpdatePageState extends State<UpdatePage> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(backgroundColor: Colors.blue),
         backgroundColor: Colors.white,
         floatingActionButton: FloatingActionButton(onPressed: tryOtaUpdate),
         body: Center(
